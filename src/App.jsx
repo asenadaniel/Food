@@ -13,7 +13,7 @@ function App() {
   const [openLoginModal, setOpenLoginModal] = useState(false)
   return (
     <>
-      {openLoginModal ? <Login /> : <div></div>}
+      {openLoginModal ? <Login setOpenLoginModal={setOpenLoginModal} /> : <div></div>}
       <div className=' w-[90%] m-auto  '>
         <Navbar setOpenLoginModal={setOpenLoginModal} />
         <Routes>

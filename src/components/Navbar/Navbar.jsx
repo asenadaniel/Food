@@ -9,7 +9,7 @@ function Navbar({ setOpenLoginModal }) {
   const [menu, setMenu] = useState('home')
 
   return (
-    <div className='py-10 px 0  lg:py-20 lg:px-0 flex justify-between items-center sticky top-0 md:static bg-white z-10   ' >
+    <div className='py-10 px 0  lg:py-20 lg:px-0 flex justify-between items-center   ' >
       <h1 className='lg:text-3xl xl:text-4xl text-2xl font-bold text-green-800'>FOOD</h1>
       <ul className=' gap-5 text-[18px] cursor-pointer hidden md:flex '>
         <Link to='/' onClick={() => setMenu('home')} className={menu === 'home' ? 'nav-active' : ''}>Home</Link>
@@ -32,7 +32,7 @@ function Navbar({ setOpenLoginModal }) {
           sign in
         </button>
         <div className='md:hidden'>
-          <MobileNav />
+          <MobileNav setOpenLoginModal={setOpenLoginModal} />
         </div>
       </div>
     </div>

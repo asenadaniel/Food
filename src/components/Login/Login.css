@@ -1,0 +1,7 @@
+.bg {
+  background-color: #77717190;
+}
+
+.max-custom {
+  max-width: max(33vw, 23px);
+}
