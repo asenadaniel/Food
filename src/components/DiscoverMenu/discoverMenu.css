@@ -1,0 +1,15 @@
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#img {
+  min-width: 5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.active {
+  border: 2px solid green;
+  padding: 2px;
+}
