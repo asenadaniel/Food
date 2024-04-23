@@ -7,7 +7,7 @@ function Login({ setOpenLoginModal }) {
   const [currentState, setCurrentState] = useState('Sign Up ')
   return (
     <div className=' absolute justify-center items-center z-10 w-[100%] h-[100%] bg grid' >
-      <form className=' max-custom   text-gray-700 bg-white flex flex-col gap-6 py-6 px-8 rounded-lg text-sm  ' >
+      <form className=' md:max-custom   text-gray-700 bg-white flex flex-col gap-6 py-6 px-8 rounded-lg text-sm  ' >
         <div className=' flex justify-between items-center text-black '>
           <h2 className=' text-xl text-green-900'>{currentState}</h2>
           <p className=' cursor-pointer text-red-800 font-bold ' onClick={() => setOpenLoginModal(false)}> close</p>

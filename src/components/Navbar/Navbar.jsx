@@ -26,14 +26,15 @@ function Navbar({ setOpenLoginModal }) {
         </div>
 
         <button
-          className=' text-[17px] border border-solid border-green-800 py-2 px-7 rounded-[50px] cursor-pointer hover:bg-green-600 transition-colors duration-300  bg-transparent hidden md:inline'
+          className=' text-[17px] border md:border-solid border-none md:border-green-800 py-2 px-2 md:px-7  rounded-[50px] cursor-pointer hover:bg-green-600 transition-colors duration-300  bg-transparent'
           onClick={() => setOpenLoginModal(true)}
         >
           sign in
         </button>
-        <div className='md:hidden'>
+
+        {/* <div className='md:hidden'>
           <MobileNav setOpenLoginModal={setOpenLoginModal} />
-        </div>
+        </div> */}
       </div>
     </div>
   )
