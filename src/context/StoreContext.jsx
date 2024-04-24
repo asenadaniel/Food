@@ -5,7 +5,15 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = ({ children }) => {
 
-  const [cart, setCart] = useState({})
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem("cart");
+    return storedCart ? JSON.parse(storedCart) : {};
+  });
+
+  // Update localStorage whenever cart state changes
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (itemId) => {
     !cart[itemId] ? setCart((prev) => ({ ...prev, [itemId]: 1 })) : setCart((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
