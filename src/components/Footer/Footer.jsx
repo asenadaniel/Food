@@ -8,7 +8,7 @@ function Footer() {
     <div className=' bg-gray-900 flex text-white  gap-5 p-12 pt-9 justify-center w-full   mt-[100px]' id='contactUs'>
       <div className=' text-center '>
         <div className='flex flex-col items-center gap-5 mb-3'>
-          <Link to='/footer' >
+          <Link to='/' >
             <h1 className=' text-4xl font-bold text-green-800'>
               FOOD
             </h1>
