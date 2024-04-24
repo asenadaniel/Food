@@ -30,7 +30,7 @@ function Cart() {
 
                 <p>{item.name}</p>
 
-                <p>N {item.price}</p>
+                <p>₦{item.price}</p>
 
                 <p className='bg-black text-white md:text-left px-2 py-1 text-center'>
                   {cart[item._id]}
