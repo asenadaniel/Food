@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom'
 
 function Order() {
+  const navigate = useNavigate()
   const { getTotalAmount } = useContext(StoreContext)
   return (
     <form className=' md:flex items-start justify-between flex-col md:flex-row gap-20 mt-[100px]'>
