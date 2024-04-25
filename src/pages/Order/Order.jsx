@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext'
 function Order() {
   const { getTotalAmount } = useContext(StoreContext)
   return (
-    <form className=' md:flex items-start justify-between flex-col gap-20 mt-[100px]'>
+    <form className=' md:flex items-start justify-between flex-col md:flex-row gap-20 mt-[100px]'>
       <div className='w-[100%] mb-24 md:mb-0'>
         <p className=' text-xl font-semibold mb-14'>Delivery Infomation</p>
         <div className=' flex gap-3'>
