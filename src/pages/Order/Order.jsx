@@ -40,7 +40,7 @@ function Order() {
             <p>TOTAL</p>
             <p>₦{getTotalAmount() === 0 ? 0 : getTotalAmount() + 2}</p>
           </div>
-          <button className='mt-14 border-none text-white bg-black md:w-[80%] py-4 md:px-0 px-8 rounded-md cursor-pointer' onClick={() => navigate('/order')} >
+          <button className='mt-14 border-none text-white bg-black md:w-[80%] py-4 md:px-0 px-8 rounded-md cursor-pointer' onClick={() => navigate('/')} >
             PROCESS PAYMENT
           </button>
         </div>
