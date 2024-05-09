@@ -13,7 +13,7 @@ function Navbar({ setOpenLoginModal }) {
   return (
     <div className='py-10 px 0  lg:py-20 lg:px-0 flex justify-between items-center  ' >
       <Link to='/'>
-        <h1 className='lg:text-3xl xl:text-4xl text-2xl font-bold text-green-800'>FOOD</h1>
+        <h1 className='lg:text-3xl xl:text-4xl text-2xl font-bold text-green-800'>Foodie Fusion</h1>
       </Link>
       <ul className=' gap-5 text-[18px] cursor-pointer hidden md:flex '>
         <Link to='/' onClick={() => setMenu('home')} className={menu === 'home' ? 'nav-active' : ''}>Home</Link>

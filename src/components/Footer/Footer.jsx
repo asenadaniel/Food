@@ -10,7 +10,7 @@ function Footer() {
         <div className='flex flex-col items-center gap-5 mb-3'>
           <Link to='/' >
             <h1 className=' text-4xl font-bold text-green-800'>
-              FOOD
+              Foodie Fusion
             </h1>
           </Link>
           <p>
